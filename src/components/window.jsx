@@ -57,7 +57,7 @@ const Window = ({ windowForName, windowForIcon, id }) => {
 		<Draggable>
 			<WindowWrapper isExpanded={isExpanded}>
 				<Header>
-					<List style={{ display: "flex" }}>
+					<List>
 						<ListItem style={{ marginRight: "auto", display: "flex" }}>
 							<Image src={windowForIcon} alt={windowForName} />
 							<span style={{ display: "inline-block", marginLeft: "1rem" }}>
