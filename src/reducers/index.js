@@ -19,7 +19,17 @@ export const initialState = {
             id: shortid.generate(),
             name: 'Staking',
             icon: icons.laptop
-        }
+        },
+        {
+            id: shortid.generate(),
+            name: 'Tools',
+            icon: icons.tools
+        },
+        {
+            id: shortid.generate(),
+            name: 'QuickLinks',
+            icon: icons.quicklinks
+        },
     ],
     openWindows: [],
     activeWindows: []

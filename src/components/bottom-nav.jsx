@@ -2,8 +2,8 @@ import { useState, useContext } from "react";
 import styled from "styled-components";
 
 import { CREATE_WINDOW_BOX } from "../actions";
-
 import { AppContext } from "../context";
+import BottomMenu from "./bottom-menu";
 
 const BottomNavWrapper = styled.div`
 	font-size: 3rem;
@@ -11,9 +11,12 @@ const BottomNavWrapper = styled.div`
 	background-color: lightgrey;
 	display: flex;
 	align-items: center;
+	positon: relative;
 `;
 
-const ButtonWrapper = styled.div``;
+const ButtonWrapper = styled.div`
+	positon: relative;
+`;
 const Button = styled.button`
 	margin-left: 2rem;
 	padding: 0.5rem 2rem;
@@ -39,6 +42,7 @@ const BottomNav = () => {
 					Start
 				</Button>
 			</ButtonWrapper>
+			{active && <BottomMenu />}
 			<ListHolder>
 				{state.openWindows.map((item) => (
 					<Button
